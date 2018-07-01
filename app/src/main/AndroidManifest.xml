@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.manzil.allinonemartadmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.MainActivity"
+            android:noHistory="true" />
+        <activity android:name=".Activities.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Category_view" />
+        <activity android:name=".Activities.AddPasal" />
+        <activity android:name=".Activities.UserRequest" />
+        <activity android:name=".Activities.ConfirmedUser" />
+        <activity android:name=".Activities.PasalStatus" />
+        <activity android:name=".Activities.UpdatePasal" />
+        <activity android:name=".Activities.ListPasalUpdate" />
+        <activity android:name=".Activities.ListPasalUpload" />
+        <activity android:name=".Activities.Upload_image" />
+        <activity android:name=".Activities.ListPasalDelete" />
+        <activity android:name=".Activities.UserDetail" />
+        <activity android:name=".Activities.ListPasalStatus" />
+        <activity android:name=".Activities.ConfirmedUserDetail" />
+        <activity android:name=".Activities.PasalStatusDetail" />
+        <activity android:name=".Activities.Upload_main_image" />
+        <activity android:name=".Activities.Upload_advertise_image"></activity>
+    </application>
+
+</manifest>

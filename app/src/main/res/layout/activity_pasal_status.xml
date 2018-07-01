@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Activities.PasalStatus">
+
+    <TextView
+        android:layout_marginTop="41dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Status of pasal"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="-21dp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/available"
+            style="@style/btn1"
+            android:background="@drawable/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Available"
+            android:onClick="getavailable"/>
+
+        <Button
+            android:id="@+id/reserved"
+            style="@style/btn1"
+            android:background="@drawable/button_style_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Reserved"
+
+            android:onClick="getreserved"/>
+        <Button
+            android:id="@+id/Sold"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/button_style_red"
+            style="@style/btn1"
+            android:text="Sold Out"
+
+            android:onClick="getsold"/>
+
+    </LinearLayout>
+
+</LinearLayout>
